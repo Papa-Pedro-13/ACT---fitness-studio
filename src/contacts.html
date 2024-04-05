@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Contacts'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <section class="main contacts-bg">
+        <div class="main__container">
+          <h1 class="main__headline">
+            Contacts
+          </h1>
+          <h4 class="main__subtitle">
+            We are close <br>
+            and always in touch
+          </h4>
+          <div class="main__btn btn btn-white">
+            Set a route
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__top">
+          <div class="contacts__container">
+            <div class="contacts__item">
+              <span>Adress:</span>
+              Juznij Bulevar, 25, Beograd
+            </div>
+            <div class="contacts__item">
+              <span>Working hours:</span>
+              Monday - Sunday: <br>
+              08:00 - 21:00
+            </div>
+            <div class="contacts__item">
+              <span>Do you need help with something?</span>
+              hello@act-now.studio <br>
+              +381 612 283 864
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11325.291570644416!2d20.470325107353073!3d44.7946078195386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7072020f83bd%3A0x93a7a78ce402862f!2z0IjRg9C20L3QuCDQsdGD0LvQtdCy0LDRgCAyNSwg0JHQtdC-0LPRgNCw0LQsINCh0LXRgNCx0LjRjw!5e0!3m2!1sru!2sru!4v1712332286918!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section class="form-block form-block-2 form-block-3">
+        <div class="form-block__container">
+          <h3 class="form-block__headline">
+            Stay informed on
+            all things ACT
+          </h3>
+          <div class="form-block__input-block input-block">
+            <input type="text" class="form-block__input" placeholder='Your email...'>
+            <div class="input-block__btn"></div>
+          </div>
+          <p class="form-block__text">
+            By signing up, you consent to the
+            processing of your personal data
+          </p>
+          <a class="form-block__btn btn btnToTop btn-white" href='#header'>
+            <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.49745 4.03698L3.96032 5.77729L1.38162 9.1304L0.676679 8.88368L-7.10119e-07 7.75438L1.8272 5.06858L8.28475 -3.62138e-07L9.92574 2.12612L11.9358 4.70264L15 7.75438L14.576 8.99296L13.6167 9.1304L10.91 6.86684L8.50255 4.03533L8.12015 7.24769L8.72201 20.4366L8.50255 24L7.5 24L6.49745 23.3244L6.49745 20.1601L6.14997 10.2448L6.49745 4.03533L6.49745 4.03698Z"
+                fill="black" />
+            </svg>
+            Back to top
+          </a>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

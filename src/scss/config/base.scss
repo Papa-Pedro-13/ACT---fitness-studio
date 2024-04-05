@@ -71,6 +71,7 @@
   color: #000;
   cursor: pointer;
   font-style: italic;
+  background-color: inherit;
   font-size: 18px;
   line-height: 1.28;
   text-align: center;
@@ -81,4 +82,8 @@
   padding: 20px;
   display: inline-block;
   min-width: 184px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    opacity: 0.9;
+  }
 }

@@ -8,21 +8,8 @@
  */
 // import MousePRLX from './libs/parallaxMouse'
 // import AOS from 'aos'
-import Swiper, { Navigation, Pagination } from 'swiper';
-var swiper = new Swiper(".gallery__slider", {
-	slidesPerView: "auto",
-	spaceBetween: 25,
-	grabCursor: true,
-	autoplay: {
-		delay: 500,
-	},
-	breakpoints: {
-		830: {
-			spaceBetween: 50,
-		},
+// import Swiper, { Navigation, Pagination } from 'swiper';
 
-	},
-});
 
 import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager';
@@ -66,6 +53,32 @@ new BurgerMenu().init();
 // new MousePRLX();
 
 window.onload = () => {
+
+	const swiperRelax = new Swiper(".relax__slider", {
+		autoplay: {
+			delay: 2500,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		}
+	});
+
+	const swiper = new Swiper(".gallery__slider", {
+		slidesPerView: "auto",
+		spaceBetween: 25,
+		grabCursor: true,
+		autoplay: {
+			delay: 2500,
+		},
+		breakpoints: {
+			830: {
+				spaceBetween: 50,
+			},
+		},
+	});
+
+
 
 	const isHoverableDevice = window.matchMedia('(hover: hover) and (pointer: fine)')
 	let eventMouse = isHoverableDevice ? "mouseenter" : 'click';
