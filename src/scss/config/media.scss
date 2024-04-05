@@ -3,6 +3,10 @@
     background-position: 80% 26%;
     background-size: 100%;
   }
+  .packages-bg {
+    background-size: 400%;
+    background-position: 60% 76%;
+  }
 }
 @media (min-width: 830px) {
   [class*='__container'] {
@@ -247,6 +251,12 @@
   }
   .services__title {
     font-size: 45px;
+  }
+  .packages__btn {
+    margin-top: 40px;
+    min-width: 240px;
+    height: 76px;
+    font-size: 25px;
   }
 }
 @media (min-width: 1240px) {

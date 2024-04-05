@@ -2,7 +2,16 @@
   background-position: 90% 20%;
   background-repeat: no-repeat;
   background-size: 768px 960px;
+  position: relative;
+  &::after {
+    content: '';
+    inset: 0;
+    background: #00000033;
+    position: absolute;
+  }
   &__container {
+    position: relative;
+    z-index: 2;
     padding-top: 100px;
     box-sizing: border-box;
     min-height: 600px;
@@ -32,6 +41,9 @@ h4 {
   font-style: italic;
   font-size: 25px;
   line-height: 110%;
+}
+h1 {
+  font-style: italic;
 }
 h3 {
   color: #000;
@@ -325,7 +337,7 @@ h2 {
     background-image: url(../images/black-cut.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 0;
+    bottom: 1px;
     position: absolute;
     left: 0;
     right: 0;
@@ -396,4 +408,18 @@ input {
   justify-content: center;
   gap: 12px;
   width: fit-content;
+}
+.packages__btn {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: fit-content;
+}
+.btn-black {
+  background-image: url(../images/black-btn.svg);
+  color: #fff;
+}
+.packages-bg {
+  background-image: url(../images/packages-bg.png);
+  background-size: 500%;
+  background-position: 70% 70%;
 }
