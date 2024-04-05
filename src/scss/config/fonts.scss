@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Antonym;
+  font-display: swap;
+  src: url('../static/Antonym.ttf') format('truetype'),
+    url('../fonts/Antonym.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Antonym;
+  font-display: swap;
+  src: url('../static/Antonym-Italic.ttf') format('truetype'),
+    url('../fonts/Antonym-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Gramatika;
+  font-display: swap;
+  src: url('../static/gramatika_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
