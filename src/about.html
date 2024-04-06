@@ -6,20 +6,33 @@
 })
 
 <body>
+  <div id="preloader"></div>
   <div class="wrapper ">
     @@include('html/header-black.html')
 
     <main class="page about-page">
       <section class="main about-bg">
         <div class="main__container">
-          <h1 class="main__headline">
-            Welcome to ACT 
+          <h1 class="main__headline" data-aos="fade-up">
+            Welcome to <svg width="86" height="26" viewBox="0 0 146 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M47.3812 1.67371L52.7576 13.2635L51.7505 26.7976L53.1608 35.641L51.2129 41.738L51.5479 43.8823L51.8828 44.6865L52.1516 50.4473L46.9779 51.6535L42.8112 50.7813L34.9493 51.9875L26.0121 50.4473L25.7433 44.0163L26.5498 43.8823L26.4836 43.4803L26.2831 43.3462L26.0825 43.0122L26.3513 43.2803L26.6863 43.5483L26.8207 43.9504L27.6272 44.0163V51.3855L16.0039 51.0493L9.75493 52.1215L5.92531 50.3133L1.22097 51.1834L0.617188 45.1545L1.22097 43.6143L1.2871 33.8327L3.43766 24.3193L1.89301 13.7996L3.43766 2.74589L47.3812 1.67371ZM16.405 34.6369L13.0448 42.9442C12.5967 44.061 12.3727 44.8439 12.3727 45.2885C12.3727 46.4053 13.0896 46.9627 14.5233 46.9627H19.4964V49.3751H1.89088V46.9627H3.5038C4.62388 46.9627 5.42821 46.7053 5.92318 46.1926C6.41601 45.6799 6.97499 44.6843 7.60223 43.2101L23.9981 3.68405H29.0374L45.4994 43.2122C46.1267 44.6865 46.6856 45.6799 47.1785 46.1947C47.6713 46.7096 48.4778 46.9648 49.5979 46.9648H51.2108V49.3772H32.3294V46.9648H37.3026C38.7363 46.9648 39.4531 46.4075 39.4531 45.2906C39.4531 44.8439 39.2291 44.0631 38.7811 42.9463L35.3547 34.639H16.4071L16.405 34.6369ZM33.6052 30.2141L25.946 11.4552L18.2185 30.2141H33.6052ZM26.3492 21.9069L25.7454 24.8554L24.1325 25.0575L25.6772 23.7172L27.1557 24.3193L26.2148 25.1894L24.8707 22.845L25.7433 21.7069L25.8777 20.9028L26.3471 21.9069H26.3492Z"
+                fill="black" />
+              <path
+                d="M82.8831 27.8044L77.7755 28.8766L72.8706 25.66L71.8636 24.5219L73.4083 24.7899L76.3653 25.526L81.6073 26.7981L86.9837 24.4538L103.446 27.9384L99.0784 51.9901H79.1218L65.1453 51.52L54.7296 49.3756L52.1758 34.7034L52.7134 22.1754L53.4516 4.89076L60.5071 3.68456L70.3169 0L97.1263 1.60827L102.635 12.596L103.441 27.9384L85.3665 29.4126L82.881 27.8044H82.8831ZM70.991 10.3517C68.5269 11.8046 66.5662 13.9256 65.1111 16.7167C63.654 19.5077 62.9264 22.8243 62.9264 26.6662C62.9264 30.5082 63.6198 33.6673 65.0087 36.4137C66.3976 39.1601 68.3007 41.2598 70.7201 42.7107C73.1395 44.1636 75.8277 44.8891 78.7825 44.8891C82.2772 44.8891 85.39 43.9403 88.123 42.0406C90.8538 40.143 92.5798 37.4753 93.2967 34.0354H99.2086C98.2229 39.1282 95.8931 43.0915 92.2214 45.9272C88.5475 48.7651 84.0245 50.1819 78.6481 50.1819C74.347 50.1819 70.4385 49.1544 66.9225 47.0994C63.4043 45.0444 60.6393 42.2193 58.6232 38.624C56.607 35.0288 55.6 31.0422 55.6 26.6641C55.6 22.286 56.607 18.2228 58.6232 14.6042C60.6393 10.9856 63.4043 8.12858 66.9225 6.02889C70.4385 3.9292 74.347 2.88042 78.6481 2.88042C82.2772 2.88042 85.6033 3.66329 88.6265 5.22475C91.6496 6.78835 94.1373 8.99866 96.0851 11.8578C98.033 14.717 99.2534 18.0207 99.7462 21.7734H93.8343C93.3863 18.8249 92.4454 16.3359 91.0117 14.3021C89.578 12.2705 87.82 10.741 85.7377 9.71345C83.6554 8.68594 81.4473 8.17325 79.1196 8.17325C76.1626 8.17325 73.4531 8.9008 70.9889 10.3517H70.991Z"
+                fill="black" />
+              <path
+                d="M144.105 43.2805L143.768 50.9177L141.148 54.0002L128.853 52.3919L123.141 53.6641L114.473 52.5919L103.857 51.9899L100.362 41.8722L103.185 38.9918L104.729 35.0392L103.722 30.0144L104.663 25.5257L103.857 20.0308L104.26 18.2885L101.774 17.6184L100.902 16.5462L99.289 12.7936L98.5508 7.09865L99.6922 1.20378L120.521 0.265625L129.055 1.6718L142.157 0.867663L145.315 2.60996L145.381 12.5936L144.306 17.2844L142.827 19.2266L142.761 21.371V26.7979L142.157 31.0866L143.299 38.1217L142.962 40.332L144.103 43.2805H144.105ZM126.399 45.9929C126.779 46.3737 127.417 46.563 128.315 46.563H131.675V49.3775H112.928V46.563H116.289C117.185 46.563 117.823 46.3737 118.204 45.9929C118.584 45.6142 118.776 44.9781 118.776 44.0846V8.9771H102.784V3.68427H141.888V8.9771H125.83V44.0846C125.83 44.9781 126.019 45.6142 126.401 45.9929H126.399Z"
+                fill="black" />
+            </svg>
+
           </h1>
-          <h4 class="main__subtitle">
+          <h4 class="main__subtitle" data-aos="fade-down">
             At ACT, we're more than just a fitness studio–we're
             a community dedicated to empowering you through
             movement. Our mission is simple: to inspire and
             support you in discovering your rhythm.
+
           </h4>
         </div>
       </section>
@@ -28,11 +41,11 @@
       </section>
       <section class="title-block title-block--gradient title-block--gradient-2">
         <div class="title-block__container">
-          <h2 class="title-block__headline">
+          <h2 data-aos="fade-right" class="title-block__headline" data-aos="fade-right">
             What's your <br>
             ideal routine?
           </h2>
-          <h4 class="title-block__subtitle">
+          <h4 class="title-block__subtitle" data-aos="fade-left">
             – Starting your day energized? <br>
             – Achieving balance? <br>
             – Building strength?
@@ -41,19 +54,20 @@
       </section>
       <section class="packages">
         <div class="packages__container">
-          <h2 class="packages__headline">We're here to guide you towards your personal perfection, treating every step
+          <h2 data-aos="fade-right" class="packages__headline">We're here to guide you towards your personal perfection,
+            treating every step
             in your journey as an art form in itself</h2>
           <div class="packages__list">
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-left" href='#'>
               <div class="packages__title">Yoga</div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-right" href='#'>
               <div class="packages__title">TRX</div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-left" href='#'>
               <div class="packages__title">Dance</div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-right" href='#'>
               <div class="packages__title">Body Ballet</div>
             </a>
 
@@ -66,7 +80,7 @@
       <section class="relax">
         <div class="relax__top">
           <div class="relax__container">
-            <h2 class="relax__headline">
+            <h2 data-aos="fade-right" class="relax__headline">
               <span>
                 A space for your
               </span>
@@ -119,7 +133,7 @@
       </section>
       <section class="form-block form-block--book">
         <div class="form-block__container">
-          <h3 class="form-block__headline">
+          <h3 data-aos="fade-left" class="form-block__headline">
             Ready to set
             your rhythm?
           </h3>

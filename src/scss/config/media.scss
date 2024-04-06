@@ -12,11 +12,17 @@
     background-size: 300%;
   }
   .yoga-bg {
-    background-position: bottom;
-    background-size: 200%;
+    background-position: center;
+    background-size: 300%;
   }
 }
 @media (min-width: 830px) {
+  .about-bg .main__headline {
+    svg {
+      width: 146px;
+      height: 54px;
+    }
+  }
   [class*='__container'] {
     padding-left: 40px;
     padding-right: 40px;
@@ -402,8 +408,26 @@
     margin-left: 290px;
     font-size: 65px;
   }
+  .person {
+    &__name {
+      text-align: left;
+      font-size: 25px;
+      margin-top: 40px;
+    }
+    &__desc {
+      margin-top: 40px;
+      font-size: 45px;
+      text-align: left;
+    }
+  }
 }
 @media (min-width: 1240px) {
+  .about-bg .main__headline {
+    svg {
+      width: 211px;
+      height: 78px;
+    }
+  }
   .contacts-bg {
     background-size: 180%;
     background-position: 46% 51%;
@@ -695,9 +719,13 @@
         fill: #fff;
       }
     }
+
     input {
       height: 110px;
     }
+  }
+  .btn.form-block__btn.btnToTop {
+    background: none;
   }
   .footer {
     padding: 50px 0;
@@ -808,11 +836,12 @@
   }
   .person {
     &__name {
-      font-size: 75px;
+      font-size: 28px;
+      margin-top: 50px;
     }
     &__desc {
-      margin-top: 50px;
-      font-size: 28px;
+      font-size: 45px;
+      margin-top: 0;
     }
     &__img {
       height: 660px;
@@ -832,7 +861,7 @@
     }
   }
   .yoga-bg {
-    background-size: cover;
+    background-size: 200%;
   }
   .img-block {
     height: 960px;
@@ -917,6 +946,9 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: 240px;
+    &:hover {
+      background-image: url(../images/input-border-white.svg) !important;
+    }
   }
   .form-block--book {
     padding-bottom: 120px;

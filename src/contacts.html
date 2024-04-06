@@ -5,16 +5,17 @@
 })
 
 <body>
+  <div id="preloader"></div>
   <div class="wrapper">
     @@include('html/header.html')
 
     <main class="page">
       <section class="main contacts-bg">
         <div class="main__container">
-          <h1 class="main__headline">
+          <h1 class="main__headline" data-aos="fade-up">
             Contacts
           </h1>
-          <h4 class="main__subtitle">
+          <h4 class="main__subtitle" data-aos="fade-down">
             We are close <br>
             and always in touch
           </h4>
@@ -51,7 +52,7 @@
       </section>
       <section class="form-block form-block-2 form-block-3">
         <div class="form-block__container">
-          <h3 class="form-block__headline">
+          <h3 data-aos="fade-left" class="form-block__headline">
             Stay informed on
             all things ACT
           </h3>

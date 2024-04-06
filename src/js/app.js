@@ -7,7 +7,7 @@
  * Если мы хотим добавить модуль следует его раскомментировать
  */
 // import MousePRLX from './libs/parallaxMouse'
-// import AOS from 'aos'
+import AOS from 'aos'
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
 
@@ -45,7 +45,7 @@ new BurgerMenu().init();
  *  Библиотека для анимаций
  *  документация: https://michalsnik.github.io/aos
  * */
-// AOS.init();
+AOS.init();
 
 /**
  * Параллакс мышей
@@ -53,6 +53,14 @@ new BurgerMenu().init();
 // new MousePRLX();
 
 window.onload = () => {
+	var preloader = document.getElementById('preloader');
+	preloader.classList.add('animate');
+	setTimeout(() => {
+		preloader.classList.add('loaded');
+		setTimeout(() => {
+			preloader.style.display = "none"
+		}, 300)
+	}, 1500)
 
 	const swiperRelax = new Swiper(".relax__slider", {
 		autoplay: {
@@ -79,19 +87,27 @@ window.onload = () => {
 	});
 
 
-
+	document.querySelector('.input-block input').addEventListener("focus", () => {
+		document.querySelector('.input-block').classList.add("active")
+	});
+	document.querySelector('.input-block input').addEventListener("focusout", () => {
+		document.querySelector('.input-block').classList.remove("active")
+	});
 	const isHoverableDevice = window.matchMedia('(hover: hover) and (pointer: fine)')
 	let eventMouse = isHoverableDevice ? "mouseenter" : 'click';
-	let dropdownBtn = document.querySelector(".header__dropdown");
+	let dropdownBtnAll = document.querySelectorAll(".header__dropdown");
 
-	if (isHoverableDevice) {
-		dropdownBtn.addEventListener("mouseleave", () => {
-			dropdownBtn.classList.remove("active")
+	dropdownBtnAll.forEach((dropdownBtn) => {
+		if (isHoverableDevice) {
+			dropdownBtn.addEventListener("mouseleave", () => {
+				dropdownBtn.classList.remove("active")
+			})
+		}
+		dropdownBtn.addEventListener(eventMouse, () => {
+			dropdownBtn.classList.toggle("active")
 		})
-	}
-	dropdownBtn.addEventListener(eventMouse, () => {
-		dropdownBtn.classList.toggle("active")
 	})
+
 }
 
 // new Tabs('tabs-example', {

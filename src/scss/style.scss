@@ -1,5 +1,51 @@
 @use 'sass:math';
-
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s linear;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: url('../images/preloader1.svg');
+    transform: translate(-50%, -50%);
+  }
+}
+#preloader.animate::after {
+  content: url('../images/preloader5.svg');
+  animation: logo 1.5s linear 1;
+}
+#preloader.loaded {
+  opacity: 0;
+}
+@keyframes logo {
+  0% {
+    content: url('../images/preloader1.svg');
+  }
+  20% {
+    content: url('../images/preloader2.svg');
+  }
+  40% {
+    content: url('../images/preloader3.svg');
+  }
+  60% {
+    content: url('../images/preloader4.svg');
+  }
+  80% {
+    content: url('../images/preloader5.svg');
+  }
+  100% {
+    content: url('../images/preloader5.svg');
+  }
+}
 /**
 * Подключение шрифтов локально из папки "./src/fonts"
 */
@@ -22,7 +68,7 @@
 * Библиотеки
 * раскомментировать для использования
 */
-// @import 'libs/aos';
+@import 'libs/aos';
 @import 'libs/swiper';
 
 /**

@@ -5,17 +5,18 @@
 })
 
 <body>
+  <div id="preloader"></div>
   <div class="wrapper">
     @@include('html/header.html')
 
     <main class="page">
       <section class="main packages-bg">
         <div class="main__container">
-          <h1 class="main__headline">
+          <h1 class="main__headline" data-aos="fade-up">
             What is your <br>
             ideal routine?
           </h1>
-          <h4 class="main__subtitle">
+          <h4 class="main__subtitle" data-aos="fade-down">
             Let’s curate a path that <br>
             aligns with your goals.
           </h4>
@@ -25,33 +26,33 @@
       <section class="packages">
         <div class="packages__container">
           <div class="packages__list">
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-right" href='#'>
               <div class="packages__title">First class</div>
               <div class="packages__price">
                 Free
               </div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-left" href='#'>
               <div class="packages__title">Single class</div>
               <div class="packages__price">
                 1800<span>RSD</span>
               </div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-right" href='#'>
               <div class="packages__title">4 classes</div>
               <div class="packages__price">
                 6400<span>RSD</span>
                 <p>save 800</p>
               </div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-left" href='#'>
               <div class="packages__title">8 classes</div>
               <div class="packages__price">12000
                 <span>RSD</span>
                 <p>save 2400</p>
               </div>
             </a>
-            <a class="packages__item" href='#'>
+            <a class="packages__item" data-aos="fade-right" href='#'>
               <div class="packages__title">12 classes</div>
               <div class="packages__price">
                 16800<span>RSD</span>
@@ -66,7 +67,7 @@
 
       <section class="form-block form-block-2">
         <div class="form-block__container">
-          <h3 class="form-block__headline">
+          <h3 data-aos="fade-left" class="form-block__headline">
             Get the latest
             news on all things ACT - straight to
             your inbox

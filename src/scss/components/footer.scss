@@ -11,6 +11,10 @@
     align-items: center;
   }
   &__icons-link {
+    transition: all 0.2s ease-in;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__links {
     display: flex;

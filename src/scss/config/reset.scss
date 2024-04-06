@@ -24,7 +24,7 @@ aside {
 }
 
 html {
-  opacity: 0;
+  opacity: 1;
   scroll-behavior: smooth;
   transition: opacity 0.8s ease-in-out;
 
@@ -67,7 +67,7 @@ input::-ms-clear {
   display: none;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 
   &::-webkit-outer-spin-button,

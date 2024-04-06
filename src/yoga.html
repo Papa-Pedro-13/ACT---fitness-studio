@@ -5,16 +5,17 @@
 })
 
 <body>
+  <div id="preloader"></div>
   <div class="wrapper">
     @@include('html/header.html')
 
     <main class="page">
       <section class="main yoga-bg">
         <div class="main__container">
-          <h1 class="main__headline">
+          <h1 class="main__headline" data-aos="fade-up">
             Reset with Yoga
           </h1>
-          <h4 class="main__subtitle">
+          <h4 class="main__subtitle" data-aos="fade-down">
             Embark on a path of self-discovery and transformation with our different yoga classes. Our instructors are
             here to guide you through each pose, helping to unlock the full benefits of this ancient practice.
           </h4>
@@ -22,12 +23,12 @@
       </section>
       <section class="title-block title-block--gradient title-block--gradient-2">
         <div class="title-block__container">
-          <h2 class="title-block__headline">
+          <h2 data-aos="fade-right" class="title-block__headline" data-aos="fade-right">
             Benefits that <br>
             extend beyond <br>
             the mat.
           </h2>
-          <h4 class="title-block__subtitle">
+          <h4 class="title-block__subtitle" data-aos="fade-left">
             – Increases flexibility, strength, and balance <br>
             – Reduces stress and anxiety <br>
             – Fosters inner peace and connection <br>
@@ -51,34 +52,33 @@
           </div>
           <div class="person__item">
             <div class="person__img-block">
-              <img src="../images/person1.png" alt="" class="person__img">
+              <img src="./images/person1.png" alt="" class="person__img">
             </div>
             <div class="person__inner">
 
+              <p class="person__desc">“It's not about being good at something. It's about being good to yourself. When
+                you begin practicing yoga, it is genuinely like the start of a whole other journey.”</p>
               <div class="person__name">Sasha Sutormina</div>
-              <p class="person__desc">It's not about being good at something. It's about being good to yourself. When
-                you
-                begin practicing yoga, it is genuinely like the start of a whole other journey.</p>
-              <button class="person__btn btn btn-black">Book a class</button>
+              <button class="person__btn btn btn-black" data-aos="fade-down">Book a class</button>
             </div>
           </div>
           <div class="person__item">
             <div class="person__img-block">
-              <img src="../images/person2.png" alt="" class="person__img">
+              <img src="./images/person2.png" alt="" class="person__img">
             </div>
             <div class="person__inner">
 
+              <p class="person__desc">“Yoga is not about touching your toes. It is what you learn on the way down. We
+                can learn a lot about ourselves on the yoga mat that we never considered before.”</p>
               <div class="person__name">Kristina Irbis</div>
-              <p class="person__desc">Yoga is not about touching your toes. It is what you learn on the way down. We can
-                learn a lot about ourselves on the yoga mat that we never considered before.</p>
-              <button class="person__btn btn btn-black">Book a class</button>
+              <button class="person__btn btn btn-black" data-aos="fade-down">Book a class</button>
             </div>
           </div>
         </div>
       </section>
       <section class="form-block form-block-2">
         <div class="form-block__container">
-          <h3 class="form-block__headline">
+          <h3 data-aos="fade-left" class="form-block__headline">
             Get the latest
             news on all things ACT - straight to
             your inbox

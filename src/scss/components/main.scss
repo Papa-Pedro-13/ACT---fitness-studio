@@ -15,7 +15,7 @@
   &__container {
     position: relative;
     z-index: 2;
-    padding-top: 100px;
+    padding-top: 130px;
     box-sizing: border-box;
     min-height: 600px;
     display: flex;
@@ -399,7 +399,7 @@ input {
   width: 100%;
   height: 50px;
   background-color: inherit;
-  color: rgb(102, 102, 102);
+  color: #fff;
   font-family: Gramatika;
   font-size: 20px;
   padding-bottom: 8px;
@@ -418,8 +418,11 @@ input {
   width: fit-content;
 }
 .btn-black {
-  background-image: url(../images/black-btn.svg);
+  background-image: url(../images/black-btn.svg) !important;
   color: #fff;
+  &:hover {
+    opacity: 0.9 !important;
+  }
 }
 .packages-bg {
   background-image: url(../images/packages-bg.png);
@@ -472,8 +475,8 @@ input {
 }
 .yoga-bg {
   background-image: url(../images/yoga-bg.png);
-  background-position: bottom;
-  background-size: 200%;
+  background-position: center;
+  background-size: 300%;
 }
 .title-block--gradient-2 {
   .title-block__subtitle {
@@ -520,7 +523,7 @@ input {
     &::after {
       content: '';
       position: absolute;
-      inset: 0;
+      inset: -1px;
       background-image: url(../images/box-cuts.svg);
       background-repeat: no-repeat;
       background-position: center;
@@ -534,18 +537,21 @@ input {
   }
   &__name {
     font-family: Gramatika;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    color: #00000099;
+    line-height: 110%;
   }
   &__desc {
     font-family: Gramatika;
-    font-size: 20px;
-    line-height: 110%;
+    font-size: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
   }
   &__btn {
+    margin: 0 auto;
+    display: block;
     margin-top: 24px;
     background-color: inherit;
   }
@@ -696,4 +702,7 @@ input {
 .footer {
   z-index: 2;
   position: relative;
+}
+.yoga-bg::after {
+  background-color: #ff000080;
 }
